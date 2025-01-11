@@ -1,0 +1,283 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f5f7;
+  color: #333;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #34404c; /* Dark background */
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styling */
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-left: 10px; /* Add some space between the logo image and the text */
+}
+
+/* Logo image styling */
+.navbar .logo-image {
+  width: 50px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between logo image and text */
+}
+
+/* Menu links styling */
+.navbar .menu a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.navbar .menu a:hover {
+  color: #ffd700; /* Hover effect for links */
+}
+
+/* Profile icon styling */
+.navbar .profile {
+  background-color: #fff;
+  color: #5c67f2;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Main Content Styling */
+.main-content {
+  display: flex;
+  padding: 30px;
+  flex: 1;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.left-section {
+  flex: 1;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.right-section {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.result-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.result-card h2 {
+  color: #4a51b7;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+.result-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.result-card .score,
+.result-card .top-score {
+  margin-top: 20px;
+  background: linear-gradient(45deg, #f8f9fa, #fff);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.result-card button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #5c67f2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.result-card button:hover {
+  background-color: #4b55c1;
+}
+
+/* Right Section Styling */
+.improvements,
+.response-time,
+.approach-data,
+.suggestions,
+.compare-accuracy,
+.time-taken {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.improvements {
+  background-color: #e7f3ff;
+}
+
+.response-time {
+  background-color: #f7f7f7;
+}
+
+.approach-data {
+  background-color: #f2f9f7;
+}
+
+.suggestions {
+  background-color: #fdfdfd;
+}
+
+.compare-accuracy,
+.time-taken {
+  background-color: #eef0ff;
+}
+
+h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #5c67f2;
+}
+
+.tags span {
+  display: inline-block;
+  margin: 5px;
+  padding: 6px 15px;
+  background-color: #eef2ff;
+  color: #5c67f2;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+}
+
+.tags span:hover {
+  transform: scale(1.1);
+}
+
+.compare-accuracy img,
+.time-taken img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+}
+
+.response-time p {
+  color: #e74c3c;
+}
+
+.response-time span {
+  color: #2ecc71;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .main-content {
+    flex-direction: column;
+  }
+
+  .right-section {
+    grid-template-columns: 1fr;
+  }
+}
+/* Styling for the Improvements Section */
+.improvements {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.improvements .tags span {
+  display: inline-block;
+  margin: 5px;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: white; /* Text color for all tags */
+  transition: transform 0.3s ease;
+}
+
+/* Assign specific colors to each tag */
+.tags .geography,
+.tags .current-affairs,
+.tags .mathematics,
+.tags .economics {
+  background-color: #27ae60; /* Green */
+}
+
+.tags .politics,
+.tags .indian-history {
+  background-color: #f1c40f; /* Yellow */
+}
+
+.tags .general-studies,
+.tags .english-literature {
+  background-color: #e74c3c; /* Red */
+}
+
+.tags .social-studies {
+  background-color: #95a5a6; /* Grey */
+}
+
+/* Hover effect for tags */
+.tags span:hover {
+  transform: scale(1.1);
+}
